@@ -1,10 +1,9 @@
-
 <?php
 $mahasiswa = array(
-    array("nim" => "25001", "nama" => "Riska", "jurusan" => "PSTI", "nilai" => 85),
-    array("nim" => "25002", "nama" => "Tiara", "jurusan" => "MKB", "nilai" => 75),
-    array("nim" => "25003", "nama" => "Bhanu", "jurusan" => "SISTEL", "nilai" => 90),
-    array("nim" => "25004", "nama" => "Fadhil", "jurusan" => "PSTI", "nilai" => 60)
+    array("nim" => "25001", "nama" => "Riska", "email" => "riska@upi.edu", "jurusan" => "PSTI", "nilai" => 85),
+    array("nim" => "25002", "nama" => "Tiara", "email" => "tiara@upi.edu", "jurusan" => "MKB", "nilai" => 55),
+    array("nim" => "25003", "nama" => "Bhanu", "email" => "bhanu@upi.edu", "jurusan" => "SISTEL", "nilai" => 90),
+    array("nim" => "25004", "nama" => "Fadhil", "email" => "fadhil@upi.edu", "jurusan" => "PSTI", "nilai" => 60)
 );
 ?>
 
@@ -26,6 +25,7 @@ $mahasiswa = array(
         <tr>
             <th>NIM</th>
             <th>Nama</th>
+            <th>Email</th>
             <th>Jurusan</th>
             <th>Nilai</th>
             <th>Grade</th>
@@ -53,8 +53,9 @@ $mahasiswa = array(
         ?>
 
         <tr>
-            <td><?php echo $data["nim"]; ?></td>
+            <td><?php echo $data ["nim"]; ?></td>
             <td><?php echo $data["nama"]; ?></td>
+            <td><?php echo $data["email"]; ?></td>
             <td><?php echo $data["jurusan"]; ?></td>
             <td><?php echo $data["nilai"]; ?></td>
             <td><?php echo $grade; ?></td>
@@ -74,6 +75,5 @@ $mahasiswa = array(
         }
         ?>
     </table>
-
 </body>
 </html>

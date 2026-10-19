@@ -1,10 +1,10 @@
 
 <?php
 $mahasiswa = array(
-    array("nim" => "25001", "nama" => "Andi", "jurusan" => "Informatika", "nilai" => 85),
-    array("nim" => "25002", "nama" => "Budi", "jurusan" => "Sistem Informasi", "nilai" => 75),
-    array("nim" => "25003", "nama" => "Citra", "jurusan" => "Informatika", "nilai" => 90),
-    array("nim" => "25004", "nama" => "Dina", "jurusan" => "Sistem Informasi", "nilai" => 60)
+    array("nim" => "25001", "nama" => "Riska", "email" => "riska@upi.edu", "jurusan" => "PSTI", "nilai" => 85),
+    array("nim" => "25002", "nama" => "Tiara", "email" => "tiara@upi.edu", "jurusan" => "MKB", "nilai" => 55),
+    array("nim" => "25003", "nama" => "Bhanu", "email" => "bhanu@upi.edu", "jurusan" => "SISTEL", "nilai" => 90),
+    array("nim" => "25004", "nama" => "Fadhil", "email" => "fadhil@upi.edu", "jurusan" => "PSTI", "nilai" => 60)
 );
 
 if (isset($_GET["nim"])) {
@@ -54,10 +54,11 @@ $ditemukan = false;
                 }
         ?>
 
-        <p><strong>NIM:</strong> <?php echo $data["nim"]; ?></p>
-        <p><strong>Nama:</strong> <?php echo $data["nama"]; ?></p>
-        <p><strong>Jurusan:</strong> <?php echo $data["jurusan"]; ?></p>
-        <p><strong>Nilai:</strong> <?php echo $data["nilai"]; ?></p>
+        <p><strong>NIM:</strong> <?php echo $data ["nim"]; ?></p>
+        <p><strong>Nama:</strong> <?php echo $data ["nama"]; ?></p>
+        <p><strong>Email:</strong> <?php echo $data ["email"]; ?></p>
+        <p><strong>Jurusan:</strong> <?php echo $data ["jurusan"]; ?></p>
+        <p><strong>Nilai:</strong> <?php echo $data ["nilai"]; ?></p>
         <p><strong>Grade:</strong> <?php echo $grade; ?></p>
         <p><strong>Status:</strong>
             <?php if ($status == "Lulus") { ?>
@@ -78,11 +79,13 @@ $ditemukan = false;
     </div>
 
     <div class="bagian-tombol">
-    <a href="index.php" class="btn-kembali">Kembali</a>
-    <a href="form_pesan.php?nim=<?php echo $nim; ?>" class="btn-pesan">Kirim Pesan</a>
-</div>
+        <a href="index.php" class="btn-kembali">Kembali</a>
+
+        <?php if ($ditemukan == true) { ?>
+            <a href="form_pesan.php?nim=<?php echo $nim; ?>" class="btn-pesan">Kirim Pesan</a>
+        <?php } ?>
+    </div>
 
 </div>
-
 </body>
 </html>
