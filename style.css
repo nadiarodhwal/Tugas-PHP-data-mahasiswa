@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fc;
+    margin: 30px;
+    color: #333;
+}
+
+h2 {
+    color: #345b80;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #c9def2;
+}
+
+a {
+    color: #315f8c;
+}
+
+input,
+textarea {
+    width: 300px;
+    padding: 8px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #c9def2;
+    border: 1px solid #9bbbd9;
+    cursor: pointer;
+}
+
+
+/* Halaman data mahasiswa */
+.container {
+    background-color: white;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.container h2 {
+    color: #315b7d;
+    text-align: center;
+}
+
+.deskripsi {
+    text-align: center;
+    color: #64748b;
+}
+
+
+/* Tabel mahasiswa */
+.tabel-mahasiswa {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabel-mahasiswa th {
+    background-color: #cfe3f3;
+    color: #315b7d;
+}
+
+.tabel-mahasiswa th,
+.tabel-mahasiswa td {
+    border: 1px solid #d5dee7;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabel-mahasiswa tr:hover {
+    background-color: #f1f7fb;
+}
+
+
+/* Status kelulusan */
+.status-lulus {
+    color: #28734b;
+    background-color: #e1f4e8;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.status-tidak-lulus {
+    color: #a33b3b;
+    background-color: #fde8e8;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+
+/* Tombol detail dan kirim pesan */
+.btn-detail,
+.btn-pesan {
+    display: inline-block;
+    background-color: #7ca6c9;
+    color: white;
+    padding: 9px 14px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-detail:hover,
+.btn-pesan:hover {
+    background-color: #527fa5;
+}
+
+
+/* Tombol kembali dan tombol lainnya */
+.bagian-tombol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-kembali {
+    display: inline-block;
+    background-color: #e2eaf1;
+    color: #315b7d;
+    padding: 9px 14px;
+    text-decoration: none;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-kembali:hover {
+    background-color: #cfe3f3;
+}
+
+
+/* Tampilan layar kecil */
+@media (max-width: 700px) {
+    body {
+        margin: 15px;
+    }
+
+    .container {
+        padding: 12px;
+        overflow-x: auto;
+    }
+
+    .tabel-mahasiswa {
+        min-width: 650px;
+    }
+}
+
+
+/* Detail mahasiswa */
+.detail-mahasiswa {
+    background-color: #f7fafc;
+    border: 1px solid #d5dee7;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+.detail-mahasiswa p {
+    padding: 8px 0;
+    margin: 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.detail-mahasiswa p:last-child {
+    border-bottom: none;
+}
+
+.detail-mahasiswa strong {
+    color: #315b7d;
+}
+
+
+/* Form pesan */
+.form-pesan {
+    max-width: 600px;
+    margin: 25px auto 0;
+}
+
+.form-pesan label {
+    display: block;
+    color: #315b7d;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.form-pesan input,
+.form-pesan textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 7px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.form-pesan input:focus,
+.form-pesan textarea:focus {
+    outline: none;
+    border-color: #7ca6c9;
+}
+
+.form-pesan textarea {
+    resize: vertical;
+}
+
+.form-pesan .bagian-tombol {
+    justify-content: flex-end;
+}
+
+.form-pesan button {
+    font-size: 14px;
+}
+
+
+/* Hasil pesan */
+.hasil-pesan {
+    background-color: #f7fafc;
+    border: 1px solid #d5dee7;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+.hasil-pesan p {
+    padding: 8px 0;
+    margin: 0;
+    border-bottom: 1px solid #e2e8f0;
+    color: #45515c;
+}
+
+.hasil-pesan p:last-child {
+    border-bottom: none;
+}
+
+.hasil-pesan strong {
+    color: #315b7d;
+}
